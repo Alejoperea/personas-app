@@ -21,7 +21,7 @@
         <tr>
         <th scope="col">Code</th>
         <th scope="col">Municipio</th>
-        <th scope="col">Codigo Departamento</th>
+        <th scope="col">Departamento</th>
          <th scope="col">Actions</th>
      </tr>
     </thead>
@@ -31,7 +31,7 @@
         <tr>
         <th scope="row">{{ $municipio->muni_codi}}</th>
         <td>{{$municipio->muni_nomb}}</td>
-        <td>{{$municipio->depa_codi}}</td>
+        <td>{{$municipio->depa_nomb}}</td>
         <td><span>Actions </span></td>
         </tr>
         @endforeach
