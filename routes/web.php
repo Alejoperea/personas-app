@@ -18,9 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/comunas',[ComunaController::class, 'index']);
+// Route::get('/comunas',[ComunaController::class, 'index'])-> name('comunas.create'); esta bien
 
-Route::get('/prueba', [ComunaController::class, 'index']) -> name('comunas.create');
+
+Route::get('/comunas',[ComunaController::class, 'index'])-> name('comunas.index'); //deberia ir index
+Route::post('/comunas',[ComunaController::class, 'store'])-> name('comunas.store');
+Route::get('/comunas/create',[ComunaController::class, 'create'])-> name('comunas.create');
+
+
+
+
 
 
 
