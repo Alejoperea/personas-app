@@ -14,14 +14,14 @@
   <div class="container">
     <h1>Lista De Paises</h1>
     
-    <a href="{{ route('paises.index') }}" class="btn btn-success">Add</a>
+    <a href="{{ route('paises.create') }}" class="btn btn-success">Add</a>
 
     <table class="table">
     <thead>
         <tr>
         <th scope="col">Code</th>
         <th scope="col">Pais</th>
-        <th scope="col">Nacionalidad</th>
+        <th scope="col">Codigo Nacionalidad</th>
          <th scope="col">Actions</th>
      </tr>
   </thead>
