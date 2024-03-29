@@ -22,7 +22,7 @@
         <th scope="col">Code</th>
         <th scope="col">Departamento</th>
         <th scope="col">Pais</th>
-         <th scope="col">Actions</th>
+         <th scope="col">Acciones</th>
      </tr>
     </thead>
      <tbody>
