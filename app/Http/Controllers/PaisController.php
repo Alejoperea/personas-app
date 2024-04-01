@@ -15,11 +15,11 @@ class PaisController extends Controller
     public function index()
     {
         //
-        // $paises = Pais::all();
-        $paises = DB::table('tb_pais')
-            ->join('tb_pais as p','tb_pais.pais_capi', '=', 'tb_pais.pais_capi')
-            ->select('tb_pais.*',"tb_pais.pais_capi")
-            ->get();
+        $paises = Pais::all();
+        // $paises = DB::table('tb_pais')
+        //     ->join('tb_pais as p','tb_pais.pais_capi', '=', 'tb_pais.pais_capi')
+        //     ->select('tb_pais.*',"tb_pais.pais_capi")
+        //     ->get();
         return view('pais.index',['paises' => $paises]);
     }
 
@@ -108,7 +108,7 @@ class PaisController extends Controller
         ->join('tb_pais as p','tb_pais.pais_capi', '=', 'tb_pais.pais_capi')
         ->select('tb_pais.*',"tb_pais.pais_capi")
         ->get();
-    return view('pais.index',['paises' => $paises]);
+        return view('pais.index',['paises' => $paises]);
 
     }
 
